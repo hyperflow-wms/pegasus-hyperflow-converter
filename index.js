@@ -19,7 +19,7 @@ var fs = require('fs'),
 // Pegasus DAX converter constructor, accepts optional name of function, used to execute tasks
 var PegasusConverter = function(functionName) {
     if(typeof(functionName) === 'undefined') {
-        this.functionName = "command_print";
+        this.functionName = "{{function}}";
     } else {
         this.functionName = functionName;
     }
@@ -99,7 +99,6 @@ function createWorkflow(dax, functionName, cb) {
             "name": jname,
             "function": functionName,
             "type": "dataflow",
-            "executor": "syscommand",
             "firingLimit": 1,
             "config": {
                 "executor": {
