@@ -1,2 +1,2 @@
 # pegasus-hyperflow-converter
-Converter of Pegasus DAX to HyperFlow JSON workflow format
+Converter of Pegasus DAX (XML or yaml) to HyperFlow JSON workflow format
