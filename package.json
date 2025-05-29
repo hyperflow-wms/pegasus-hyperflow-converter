@@ -1,10 +1,19 @@
 {
-  "name": "pegasus-hyperflow-converter",
+  "name": "@hyperflow/pegasus-convert",
+  "type": "module",
+  "main": "./hflow-pegasus-convert.js",
   "description": "Pegasus DAX to HyperFlow JSON workflow format converter",
   "version": "0.3.0",
   "bin": {
-    "hflow-convert-dax": "./hflow-pegasus-convert"
+    "hflow-convert-dax": "./hflow-pegasus-convert.js"
   },
+  "files": [
+    "hflow-pegasus-convert.js",
+    "yamlConverter.js",
+    "daxConverter.js",
+    "package.json",
+    "README.md"
+  ],
   "dependencies": {
     "js-yaml": "^4.1.0",
     "shell-quote": "^1.7.2",
