@@ -125,7 +125,7 @@ function createWorkflow(dax, functionName, cb) {
             } else {
                     dataName = job_data['$'].file; // dax v2.1
             }
-            if (!dataNames[dataName]) {
+            if (!(dataNames in dataName)) {
                 ++nextDataId;
                 wfOut.signals.push({
                     "name": dataName,
