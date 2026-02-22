@@ -17,6 +17,6 @@
   "dependencies": {
     "js-yaml": "^4.1.0",
     "shell-quote": "^1.7.2",
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.5.0"
   }
 }
